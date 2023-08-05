@@ -6,8 +6,22 @@
 
 /* Add additional styling to improve layout */
 header {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
   margin-bottom: 30px;
+  margin-left: 12px;
+}
+
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; /* Center list items horizontally */
+}
+
+.contact-info li {
+  margin: 5px 0;
 }
 
 h1, h3 {
@@ -25,6 +39,28 @@ h1, h3 {
   margin: 0 5px;
 }
 
+.image-column {
+  width: 300px;
+  height: 300px;
+  margin-left: 20px; /* Adjust spacing as needed */
+}
+
+.image-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.education-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+}
+
+
+.education{
+  margin-left: 111px;
+}
+
+
 .education-item,
 .project-card,
 .experience-item,
@@ -37,13 +73,16 @@ h1, h3 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   margin-left: 12px;
 
 } 
 
 .projects {
   width: 100%;
+}
+.project-title{
+  margin-left: 111px;
 }
 
 .projects-container {

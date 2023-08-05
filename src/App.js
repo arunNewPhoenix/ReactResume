@@ -58,9 +58,9 @@ const App = () => {
           <li>¯ Linkedin  Github Leetcode</li>
         </ul>
       </header>
-
+      <div className="education-container">
       <section className="education">
-        <h2>EDUCATION</h2>
+        <h2 >EDUCATION</h2>
         <div className="education-item">
           <h3>B.Tech. (CSE) - 8.0 CGPA</h3>
           <p>Jharkhand University of Technology</p>
@@ -77,9 +77,16 @@ const App = () => {
           <p>2015</p>
         </div>
       </section>
+  <div className="image-column">
+    {/* Place your 300x300px image here */}
+    <img src="JUT_Logo.jpg" alt="Image" />
+  </div>
+</div>
+
+      
 
       <section className="projects">
-        <h2>PROJECTS</h2>
+        <h2 className='project-title' >PROJECTS</h2>
         <div className="projects-container">
           <div className="project-list">
             {projects.map((project, index) => (
