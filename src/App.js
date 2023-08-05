@@ -32,11 +32,11 @@ const projects = [
 
 
 const App = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+  // const [selectedProject, setSelectedProject] = useState(null);
 
-  const handleProjectClick = (index) => {
-    setSelectedProject(projects[index]);
-  };
+  // const handleProjectClick = (index) => {
+  //   setSelectedProject(projects[index]);
+  // };
 
 
  const [hoveredProject, setHoveredProject] = useState(null);
@@ -86,13 +86,13 @@ const App = () => {
       <section className="projects">
         <h2>PROJECTS</h2>
         <div className="projects-container">
-     
           <div className="project-list">
             {projects.map((project, index) => (
               <div
                 key={index}
                 className="project-card"
-                onClick={() => handleProjectClick(index)}
+                onMouseEnter={() => handleProjectHover(index)}
+                onMouseLeave={handleProjectMouseLeave}
               >
                 <h3>{project.title}</h3>
                 <p>Tech stack: {project.techStack}</p>
@@ -101,16 +101,15 @@ const App = () => {
             ))}
           </div>
           <div className="project-preview">
-            {selectedProject && (
-              <div className="project-card-preview">
-                <h3>{selectedProject.title}</h3>
-                <p>Tech stack: {selectedProject.techStack}</p>
-                <p>{selectedProject.description}</p>
+            {hoveredProject && (
+              <div className="project-card">
+                <h3>{hoveredProject.title}</h3>
+                <p>Tech stack: {hoveredProject.techStack}</p>
+                <p>{hoveredProject.description}</p>
                 {/* You can also add preview image here */}
               </div>
             )}
           </div>
-   
         </div>
       </section>
 
