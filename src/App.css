@@ -75,6 +75,7 @@ h1, h3 {
 }
 
 
+
 .project-card
  {
     height: auto;
@@ -84,10 +85,12 @@ h1, h3 {
     cursor: pointer;
     transition: background-color 0.2s, transform 0.2s;
   }
+
   
 
 .project-card-preview {
-
+ 
+ 
   height: 500px;
   width: 600px;
   border: 1px solid #ccc;

@@ -31,22 +31,17 @@ const projects = [
 
 
 
+
+
 const App = () => {
-  // const [selectedProject, setSelectedProject] = useState(null);
-
-  // const handleProjectClick = (index) => {
-  //   setSelectedProject(projects[index]);
-  // };
-
-
- const [hoveredProject, setHoveredProject] = useState(null);
+  const [hoveredProject, setHoveredProject] = useState(projects[0]); // Initialize with the first project
 
   const handleProjectHover = (index) => {
     setHoveredProject(projects[index]);
   };
 
   const handleProjectMouseLeave = () => {
-    setHoveredProject(null);
+    setHoveredProject(projects[0]); // Reset to the first project when not hovering
   };
 
 
