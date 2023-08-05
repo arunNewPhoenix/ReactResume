@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import './App.css';
+import  logo from './JUT_Logo.jpg' 
 
 const projects = [
   {
@@ -62,7 +63,7 @@ const App = () => {
       <section className="education">
         <h2 >EDUCATION</h2>
         <div className="education-item">
-          <h3>B.Tech. (CSE) - 8.0 CGPA</h3>
+          <h1>B.Tech. (CSE) - 8.0 CGPA</h1>
           <p>Jharkhand University of Technology</p>
           <p>August 2019 – June 2023</p>
         </div>
@@ -79,8 +80,11 @@ const App = () => {
       </section>
   <div className="image-column">
     {/* Place your 300x300px image here */}
-    <img src="JUT_Logo.jpg" alt="Image" />
+    <img src={logo} alt="Image" />
+    <h3 className='degree'>Bachelors in engineering(CSE) </h3>
   </div>
+  
+
 </div>
 
       
