@@ -102,7 +102,7 @@ const App = () => {
           </div>
           <div className="project-preview">
             {hoveredProject && (
-              <div className="project-card">
+              <div className="project-card-preview">
                 <h3>{hoveredProject.title}</h3>
                 <p>Tech stack: {hoveredProject.techStack}</p>
                 <p>{hoveredProject.description}</p>

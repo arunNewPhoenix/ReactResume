@@ -75,9 +75,21 @@ h1, h3 {
 }
 
 
-.project-card,
+.project-card
+ {
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+
 .project-card-preview {
-  height: auto;
+
+  height: 500px;
+  width: 600px;
   border: 1px solid #ccc;
   padding: 10px;
   margin: 10px;
