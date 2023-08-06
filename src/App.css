@@ -15,6 +15,11 @@ header {
 }
 
 .contact-info {
+  
+  background-color: #f5f5f5;
+  font-family: monospace;
+  font-size: x-large;
+  color: #141414;
   list-style-type: none;
   padding: 0;
   text-align: center; /* Center list items horizontally */
@@ -41,7 +46,7 @@ h1, h3 {
 
 .image-column {
  
-  margin-top: 12px;
+  margin-top: 54px;
   align-self: flex-start;
   width: 300px;
   height: 300px;
@@ -49,7 +54,9 @@ h1, h3 {
 }
 
 .degree{
-  margin-top: 111px;
+  margin-left: 29px;
+  margin-top: 32px;
+  font-family: math;
 }
 
 .image-column img {
@@ -58,7 +65,16 @@ h1, h3 {
   height: 100%;
   object-fit: cover;
 }
+
+
+.previewImg{
+  height: 300px;
+  width: 586px;
+
+}
+
 .education-container {
+  background-color: #f5f5f5;
   width: 100%;
   display: flex;
   align-items: flex-start; /* Align items to the top */
@@ -69,12 +85,34 @@ h1, h3 {
   margin-left: 111px;
   width: 50%;
 }
+.experience{
+  margin-left: 111px;
+}
 
+.experience-item{
+
+  width: 50%;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+.achievements{
+  margin-left: 80px;
+  width: 50%;
+  word-wrap: break-word;
+}
+.skills{
+  margin-left: 80px;
+}
+.skills-section{
+  width: 50%;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
 
 .education-item,
-.project-card,
-.experience-item,
-.skills-section {
+.project-card
+ {
   margin-bottom: 20px;
 }
 

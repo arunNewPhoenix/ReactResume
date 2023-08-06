@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import './App.css';
 import  logo from './JUT_Logo.jpg' 
+import preview from './LemonadeHomePage.png'
 
 const projects = [
   {
@@ -53,10 +54,10 @@ const App = () => {
         <h1>ARUN KUMAR</h1>
         <h3>Software Engineer</h3>
         <ul className="contact-info">
-          <li>Ó +91-7479707761</li>
-          <li>[ 2245arunkumarz@gmail.com ]</li>
-          <li>½ Bangalore - India</li>
-          <li>¯ Linkedin  Github Leetcode</li>
+          <li > +91-7479707761</li>
+          <li> 2245arunkumarz@gmail.com </li>
+          <li>Bangalore - India</li>
+          <li> Linkedin | Github | Leetcode</li>
         </ul>
       </header>
       <div className="education-container">
@@ -81,7 +82,7 @@ const App = () => {
   <div className="image-column">
     {/* Place your 300x300px image here */}
     <img src={logo} alt="Image" />
-    <h3 className='degree'>Bachelors in engineering(CSE) </h3>
+    <h3 className='degree'>Bachelors in engineering(CSE) 2019 - 23  </h3>
   </div>
   
 
@@ -112,7 +113,7 @@ const App = () => {
                 <h3>{hoveredProject.title}</h3>
                 <p>Tech stack: {hoveredProject.techStack}</p>
                 <p>{hoveredProject.description}</p>
-                {/* You can also add preview image here */}
+                <img className='previewImg' src={preview}/>
               </div>
             )}
           </div>
